@@ -11,3 +11,12 @@ function unDo(){
    document.getElementById("image").innerHTML = "Hover over an image below to display here."
 
 }
+
+function newFunction(){
+   console.log("Onload function starting")
+
+   currentImages = document.querySelectorAll("img")
+   for (var i = 0;i < currentImages.length; i++) {
+      currentImages[i].setAttribute("tabindex", "0")
+   }
+}
